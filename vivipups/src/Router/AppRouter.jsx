@@ -7,13 +7,11 @@ import Gallery from "../pages/Gallery.jsx";
 
 function AppRouter() {
     return (
-        <HashRouter>
             <Routes>
                 <Route path="/" element={<LockScreen />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/gallery" element={<Gallery />} />
             </Routes>
-        </HashRouter>
     );
 }
 
