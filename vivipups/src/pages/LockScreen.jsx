@@ -13,10 +13,10 @@ const numbers = [
 
 function Buttons() {
     return (
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-2 align-center">
             {numbers.map((number) => (
                 <div key={number.num} 
-                    className="">
+                    className="mb-2">
 
                     <h1>{number.num}</h1>
 
@@ -26,13 +26,21 @@ function Buttons() {
     );
 }
 
+function ProgressBar() {
+    return (
+        <>
+        </>
+    );
+}
+
 function LockScreen() {
     return (
         <main className="min-h-screen flex items-center justify-center">
             <div>
-                <h1 className="text-5xl font-bold text-green-600">
+                <h1 className="text-5xl font-bold text-pink-600">
                     LockScreen
                 </h1>
+                <ProgressBar />
                 <Buttons />
             </div>
         </main>
