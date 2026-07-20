@@ -1,14 +1,18 @@
+import React from "react";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 
-import './App.css'
+import Home from "./Home";
+import LockScreen from "./"
+import AppRouter from "./Router/AppRouter";
+
+
 
 function App() {
   return (
-    <div className="h-screen flex items-center justify-center bg-pink-500">
-      <h1 className="text-5xl font-bold text-white">
-        Tailwind works!
-      </h1>
+    <div className="bg-pink-200">
+      <AppRouter />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
