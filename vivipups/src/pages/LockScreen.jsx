@@ -13,10 +13,13 @@ const numbers = [
 
 function Buttons() {
     return (
-        <div>
+        <div className="grid grid-cols-3 gap-4">
             {numbers.map((number) => (
-                <div key={number.num}>
+                <div key={number.num} 
+                    className="">
+
                     <h1>{number.num}</h1>
+
                 </div>
             ))}
         </div>
