@@ -13,7 +13,7 @@ const numbers = [
 
 function Buttons() {
     return (
-        <div className="grid grid-cols-3 gap-4 green-400">
+        <div className="grid grid-cols-3 gap-4">
             {numbers.map((number) => (
                 <div key={number.num} 
                     className="">
@@ -30,7 +30,7 @@ function LockScreen() {
     return (
         <main className="min-h-screen flex items-center justify-center">
             <div>
-                <h1 className="text-5xl font-bold text-pink-600">
+                <h1 className="text-5xl font-bold text-green-600">
                     LockScreen
                 </h1>
                 <Buttons />
